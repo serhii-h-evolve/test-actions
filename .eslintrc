@@ -4,17 +4,15 @@
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:import/errors",
-    "plugin:import/warnings",
-    "plugin:import/typescript"
+    "plugin:import/warnings"
   ],
-  "parser": "@typescript-eslint/parser",
+  "parser": "babel-eslint",
   "rules": {
     "no-console": [1, { "allow": ["warn", "error"] }],
     "prettier/prettier": "error",
     "@next/next/no-img-element": "off",
     "react/prop-types": "off",
-    "no-unused-vars": "off",
-    "@typescript-eslint/no-unused-vars": ["warn"],
+    "no-unused-vars": ["warn"],
     "react/jsx-curly-newline": "off",
     "react/jsx-props-no-spreading": "off",
     "consistent-return": "warn",
@@ -22,7 +20,6 @@
       "error",
       {
         "groups": [ "builtin", "external", "internal", ["parent", "sibling"] ],
-
         "pathGroups": [
           {
             "pattern": "react",
@@ -45,7 +42,7 @@
     },
     "import/resolver": {
       "node": {
-        "extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "extensions": [".js", ".jsx"],
         "moduleDirectory": ["node_modules", "src/"]
       }
     }

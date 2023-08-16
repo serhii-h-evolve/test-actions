@@ -27,8 +27,12 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prepare": "husky install",
-    "pre-commit": "eslint . --quiet --ext .js,.jsx"
+    "prepare": "husky install"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "eslint . --quiet --ext .js,.jsx"
+    }
   },
   "eslintConfig": {
     "extends": [

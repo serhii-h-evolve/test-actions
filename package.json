@@ -30,7 +30,7 @@
     "eject": "react-scripts eject",
     "prepare": "husky install",
     "pre-commit": "eslint . --quiet --ext .js,.jsx",
-    "commitlint": "commitlint --edit"
+    "commit-msg": "commitlint --edit '$1'"
   },
   "eslintConfig": {
     "extends": [
